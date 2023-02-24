@@ -64,4 +64,35 @@ function newFunction(word,n){
 }
 console.log(newFunction('Hello',3));
 
+function yourName(firstName,lastName){
+return (firstName+" "+lastName);
+}
+console.log(yourName("Breanna","Bonnet"));
+
+function isArrayGreaterThan(arr) {
+    var a=0
+    for (i=0;i<arr.length;i++){
+        a=a+arr[i];
+    } if (a>100) {
+    return true;
+} else {
+    return false;
+}
+}
+
+let numberOfPets= [3,5,8,4,6,3,2,2,1]
+console.log(isArrayGreaterThan(numberOfPets));
+let timesItHasSnowedEveryMonth= [15,20,35,13,5,2,1,0,0,6,22,40]
+console.log(isArrayGreaterThan(timesItHasSnowedEveryMonth));
+
+function findTheAverage(arr) {
+    var b=0
+    for (i=0;i<arr.length;i++) {
+        b=b+arr[i]
+    }
+    return (b/arr.length);
+}
+
+let mugsInEachHouse=[5,6,3,9]
+console.log(findTheAverage(mugsInEachHouse));
 
