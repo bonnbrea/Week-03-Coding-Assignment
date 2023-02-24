@@ -36,3 +36,8 @@ for (var i=1;i<names.length;i++) {
 }
 console.log(allNames);
 
+var lastName=names[names.length-1];
+console.log(lastName);
+
+var firstName=names[0];
+console.log(firstName);
