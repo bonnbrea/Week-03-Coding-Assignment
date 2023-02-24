@@ -41,3 +41,27 @@ console.log(lastName);
 
 var firstName=names[0];
 console.log(firstName);
+
+var nameLengths=[]
+for (var i=0;i<names.length;i++) {
+    nameLengths[i]=names[i].length
+}
+console.log(nameLengths);
+
+var addLengths=0
+for (var i=0;i<nameLengths.length;i++){
+    addLengths=addLengths+nameLengths[i];
+}
+console.log(addLengths);
+
+function newFunction(word,n){
+    var w=''
+    for (i=1;i<=n;i++)
+    {
+       w= w.concat(word);
+    }
+    return w;
+}
+console.log(newFunction('Hello',3));
+
+
