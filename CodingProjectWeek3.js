@@ -96,3 +96,58 @@ function findTheAverage(arr) {
 let mugsInEachHouse=[5,6,3,9]
 console.log(findTheAverage(mugsInEachHouse));
 
+
+function compareAverages(arr1,arr2){
+    var a=0
+    for (var i=0;i<arr1.length;i++){
+        a=a+arr1[i]
+    }
+    var b=0
+    for (var i=0;i<arr2.length;i++){
+        b=b+arr2[i]
+    }
+    var average1=a/arr1.length;
+    var average2=b/arr2.length;
+    if (average1>average2){
+        return true;
+    }else{
+        return false;
+    }
+}
+let thisArrayFirst=[20,10,80,60]
+let thisArraySecond=[5,8,10,16]
+console.log(compareAverages(thisArrayFirst,thisArraySecond));
+
+
+function willBuyDrink(isHotOutside,moneyInPocket){
+    if((isHotOutside=true)&&(moneyInPocket>10.50)){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+console.log(willBuyDrink(true,20));
+console.log(willBuyDrink(false,8));
+console.log(willBuyDrink(true,7.50));
+
+
+function isStudentPassing(grade){
+    if (grade>=70){
+    return "Student is passing";
+} else{
+    return "Student is not passing";
+}
+}
+console.log(isStudentPassing(80));
+console.log(isStudentPassing(69));
+
+function canWeGoOnVacation(timeOffWorkApproved,moneyInSavings){
+    if((timeOffWorkApproved=true)&&(moneyInSavings>=900)){
+        return "We can plan our vacation"
+     } else{
+        return "We have to wait to plan our vacation"
+     }       
+}
+console.log(canWeGoOnVacation(true,900));
+console.log(canWeGoOnVacation(true,750));
